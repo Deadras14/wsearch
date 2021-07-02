@@ -14,4 +14,9 @@ export class SearchBarComponent implements OnInit {
 
   }
 
+  onFormSubmit(event: any) {
+    event.preventDefault();
+    console.log(this.term);
+  }
+
 }
